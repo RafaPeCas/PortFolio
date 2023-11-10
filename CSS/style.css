@@ -34,8 +34,9 @@ nav a {
 }
 
 nav a:hover {
-    color: red;
+    color: rgb(255, 170, 0);
     text-shadow: 5px 5px 15px red;
+    animation: gironda 0.5s;
 }
 
 .nombre {
@@ -43,6 +44,32 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     padding-top: 30vh;
+    animation: floatAnimation 2s infinite alternate; /* Aplica la animación */
+}
+
+@keyframes floatAnimation {
+    from {
+        transform: translateY(0); /* Posición inicial */
+    }
+    to {
+        transform: translateY(-20px); /* Posición flotante */
+    }
+}
+
+.nombre h1:hover{
+    
+}
+
+@keyframes gironda {
+    0% {
+        transform:scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100%{
+        transform:scale(1);
+    }
 }
 
 .nombre h1 {
@@ -60,15 +87,15 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
-    width: 550px;
+    width: 500px;
 }
 
-.titulos div:hover {
-    color: red;
+/* .titulos div:hover {
+    color: rgb(255, 145, 0);
     text-shadow: 5px 5px 15px red;
     transform: scale(1.2);
-    transition: ;
-}
+    transform: translateX(30px);
+} */
 
 .barra {
     font-size: 100px;
