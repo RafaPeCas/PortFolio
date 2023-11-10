@@ -36,7 +36,19 @@ nav a {
 nav a:hover {
     color: rgb(255, 170, 0);
     text-shadow: 5px 5px 15px red;
-    animation: gironda 0.5s;
+    animation: salto 0.5s;
+}
+
+@keyframes salto {
+    0% {
+        transform:scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100%{
+        transform:scale(1);
+    }
 }
 
 .nombre {
@@ -58,18 +70,6 @@ nav a:hover {
 
 .nombre h1:hover{
     
-}
-
-@keyframes gironda {
-    0% {
-        transform:scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100%{
-        transform:scale(1);
-    }
 }
 
 .nombre h1 {
