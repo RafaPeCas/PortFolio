@@ -59,12 +59,15 @@
 
             <article class="sobreMi">
                 <img class="uno" src="img/mauro-Escalado.jpeg" alt="Mauro">
-                <p class="dos">¡Salut ! Je m'appelle Mauro, un développeur passionné d'applications web avec une
+                <div class="dos">
+                    <p>¡Salut! Je m'appelle Mauro, un développeur passionné d'applications web avec une
                     approche créative et axée sur les résultats. Mon parcours se concentre sur la transformation d'idées
                     innovantes en solutions numériques attrayantes et fonctionnelles. Fort de mon expérience dans les
                     technologies de pointe et engagé dans une amélioration continue, je suis enthousiaste à l'idée de
                     relever de nouveaux défis et de contribuer au monde numérique avec mes compétences et mon
                     expérience. Construisons quelque chose d'incroyable ensemble !</p>
+                </div>
+                
             </article>
 
         </section>
@@ -74,18 +77,41 @@
             <h1 class="titulo">Proyectos</h1>
 
             <article class="proyectos">
-                <img src="img/flexa.png" alt="" id="izquierda" class="flexa" onclick="canales(+1)">
-                <div id="televisor">
-                    <img src="img/Yo.jpg" alt="" class="contenidoTv" id="canal">
-                    <img src="img/tv.png" alt="" class="marcoTv">
+
+                <div class="flexas-responsive">
+                    <img src="img/flexa.png" alt="" id="izquierda" class="flexa-r" onclick="canales(+1)">
+                    <img src="img/flexad.png" alt="" id="derecha" class="flexa-r" onclick="canales(-1)">
                 </div>
+
+                <img src="img/flexa.png" alt="" id="izquierda" class="flexa" onclick="canales(+1)">
+
+                <div class="tv-descripcion">
+                    <div id="televisor">
+                        <img src="img/minas.png" alt="" class="contenidoTv" id="canal">
+                        <a id="enlace" target="_blank" href="https://view.genial.ly/638c6eb5bbff690017976335/presentation-presentacion-proyeccion"><img src="img/tv.png" alt="" class="marcoTv"></a>
+                    </div>
+                    <p id="descripciontv" class="descripcion">Portador de minas</p>
+                </div>
+
                 <img src="img/flexad.png" alt="" id="derecha" class="flexa" onclick="canales(-1)">
+
             </article>
 
         </section>
 
         <section id="tecnologias">
             <h1 class="titulo">Tecnologías</h1>
+            <div id="lista-tec">
+                <div>glugla</div>
+                <div>glugla</div>
+                <div>glugla</div>
+                <div>glugla</div>
+                <div>glugla</div>
+                <div>glugla</div>
+                <div>glugla</div>
+                <div>glugla</div>
+                <div>glugla</div>
+            </div>
         </section>
         <section id="contacto">
             <h1 class="titulo">Contacto</h1>

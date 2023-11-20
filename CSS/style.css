@@ -55,7 +55,6 @@ nav a:hover {
     padding-right: 30px;
 }
 
-
 @keyframes floatAnimation {
     from {
         transform: translateY(0);
@@ -68,7 +67,7 @@ nav a:hover {
 
 @media only screen and (min-width: 1031px) {
     nav a {
-        font-size: 40px;
+        font-size: 33px;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -104,6 +103,10 @@ nav a:hover {
     .dos {
         width: 50vw;
         order: 1;
+    }
+
+    .flexas-responsive {
+        display: none;
     }
 }
 
@@ -157,7 +160,9 @@ nav a:hover {
         order: 1;
     }
 
-
+    .flexas-responsive {
+        display: none;
+    }
 }
 
 
@@ -219,6 +224,24 @@ nav a:hover {
     .dos {
         order: 2;
     }
+
+    .flexa {
+        display: none;
+    }
+
+    .flexas-responsive {
+        display: flex;
+        transform: scale(0.8);
+    }
+
+    .proyectos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #televisor {
+        width: 90%;
+    }
 }
 
 .sobreMi {
@@ -229,7 +252,6 @@ nav a:hover {
 #about {
     background-repeat: no-repeat;
     background-size: cover;
-
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -257,12 +279,14 @@ nav a:hover {
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
-.proyectos{
+.proyectos {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 .titulo {
@@ -273,7 +297,8 @@ nav a:hover {
     text-shadow: 5px 5px 15px black;
 }
 
-.flexa{
+.flexa,
+.flexa-r {
     border-radius: 100%;
     width: 120px;
     height: auto;
@@ -282,34 +307,87 @@ nav a:hover {
     cursor: pointer;
 }
 
-.flexa:hover{
+.flexa:hover,
+.flexa-r:hover {
     box-shadow: 5px 5px 15px #ffff00;
 }
 
-#televisor{
+#televisor {
     position: relative;
+
 }
 
-.contenidoTv{
+.tv-descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.descripcion {
+    margin-top: 14px;
+    background-color: rgba(0, 0, 0, 0.50);
+    z-index: 3;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 25px;
+}
+
+.contenidoTv {
+    border-radius: 15px;
     z-index: 0;
     position: absolute;
     height: 100%;
     width: 100%;
-    border-radius: 15px;
+    padding: 6% 15% 6% 8%;
+    animation: luz 2s infinite linear;  
 }
 
-.marcoTv{
+.marcoTv {
     position: relative;
     z-index: 2;
     border-radius: 15px;
-    box-shadow: 5px 5px 150px 30px rgb(255, 255, 255);
     border: black solid 5px;
+    width: 100%;     
+}
+
+.ambilight{
+
+    z-index: 4;
+    position: absolute;
+    height: 76%;
+    width: 71%;
+    margin-top: 8.5%;
+    margin-left: 11%;
+
+}
+
+@keyframes luz{
+    0%{
+        box-shadow: 5px 5px 150px 30px rgb(255, 255, 255);
+    }
+    50%{
+        box-shadow: 5px 5px 100px 30px rgb(255, 255, 255);
+    }
+    100%{
+        box-shadow: 5px 5px 150px 30px rgb(255, 255, 255);
+    }
 }
 
 /* HOLA */
 #tecnologias {
     background-color: #CABAED;
     color: black;
+}
+
+#lista-tec{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#lista-tec div{
+    height: 100%;
 }
 
 /* HOLA */
