@@ -44,6 +44,7 @@ function canales(gax) {
     canal.src = imagenActual;
     descripciontv.textContent = imagenes[imagenActual][0];
     enlace.href = imagenes[imagenActual][1];
+    console.log(imagenes[imagenActual][1]);
 }
 
 function desnombrar() {
@@ -61,4 +62,25 @@ function animar() {
     }, 200);
 }
 
+function colorearl(color){
+if (color){
+    fondoizquierda.classList.remove("fondocolor1"),
+    fondoizquierda.classList.add("fondocolor2")
+} 
+if (!color){
+    fondoizquierda.classList.remove("fondocolor2"),
+    fondoizquierda.classList.add("fondocolor1")
+}
+}
 
+function colorearr(color){
+    if (color){
+        fondoderecha.classList.remove("fondocolor1"),
+        fondoderecha.classList.add("fondocolor2")
+    } 
+    if (!color){
+        fondoderecha.classList.remove("fondocolor2"),
+        fondoderecha.classList.add("fondocolor1")
+    }
+    }
+    

@@ -80,27 +80,29 @@
             <h1 class="titulo">Proyectos</h1>
 
             <article class="proyectos">
-
-                <div class="flexas-responsive">
-                    <img src="img/flexa.png" alt="" id="izquierda" class="flexa-r" onclick="canales(+1)">
-                    <img src="img/flexad.png" alt="" id="derecha" class="flexa-r" onclick="canales(-1)">
-                </div>
-
-                <img src="img/flexa.png" alt="" id="izquierda" class="flexa" onclick="canales(+1)">
-
                 <div class="tv-descripcion">
                     <div id="televisor">
                         <img src="img/minas.png" alt="" class="contenidoTv" id="canal">
                         <a id="enlace" target="_blank"
                             href="https://view.genial.ly/638c6eb5bbff690017976335/presentation-presentacion-proyeccion"><img
                                 src="img/frame.png" alt="" class="marcoTv"></a>
-                        <img src="img/underframe.png" alt="" style="z-index: 4;">
                     </div>
+                    <div class="marco">
+                        <div class="flechas">
+                            <div id="izquierda" class="flecha" onclick="canales(+1)" onmouseover="colorearl(true)"
+                                onmouseout="colorearl(false)"></div>
+                            <div id="derecha" class="flecha" onclick="canales(-1)" onmouseover="colorearr(true)"
+                                onmouseout="colorearr(false)"></div>
+                        </div>
+                        <div class="flechas">
+                            <div id="fondoizquierda" class="fondo fondocolor1"></div>
+                            <div id="fondoderecha" class="fondo fondocolor1"></div>
+                        </div>
+                        <img class="botonera" src="img/underframeblank.png" alt="" style="z-index: 4">
 
-                    <!-- <p id="descripciontv" class="descripcion">Buscador de minas</p> -->
+                    </div>
+                    <p id="descripciontv" class="descripcion">Buscador de minas</p>
                 </div>
-
-                <img src="img/flexad.png" alt="" id="derecha" class="flexa" onclick="canales(-1)">
 
             </article>
 
