@@ -43,5 +43,22 @@ function canales(gax) {
 
     canal.src = imagenActual;
     descripciontv.textContent = imagenes[imagenActual][0];
-    enlace.href=imagenes[imagenActual][1];
+    enlace.href = imagenes[imagenActual][1];
 }
+
+function desnombrar() {
+    tecnotitulo.textContent = "Tecnologías";
+}
+
+function nombrar(nombre) {
+    tecnotitulo.textContent = "Tecnologías: " + nombre;
+}
+
+function animar() {
+    enviarformulario.classList.add("animado");
+    setTimeout(function () {
+        enviarformulario.classList.remove("animado");
+    }, 200);
+}
+
+
