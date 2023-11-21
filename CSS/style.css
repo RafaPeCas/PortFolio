@@ -325,7 +325,6 @@ nav a:hover {
 
 #televisor {
     position: relative;
-
 }
 
 .tv-descripcion {
@@ -333,6 +332,8 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .descripcion {
@@ -350,27 +351,14 @@ nav a:hover {
     position: absolute;
     height: 100%;
     width: 100%;
-    padding: 6% 15% 6% 8%;
+    /* padding: 6% 15% 6% 8%; */
     animation: luz 2s infinite linear;
 }
 
 .marcoTv {
     position: relative;
     z-index: 2;
-    border-radius: 15px;
-    border: black solid 5px;
     width: 100%;
-}
-
-.ambilight {
-
-    z-index: 4;
-    position: absolute;
-    height: 76%;
-    width: 71%;
-    margin-top: 8.5%;
-    margin-left: 11%;
-
 }
 
 @keyframes luz {
