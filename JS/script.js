@@ -60,6 +60,13 @@ function animar() {
     setTimeout(function () {
         enviarformulario.classList.remove("animado");
     }, 200);
+    let direccionCorreo = 'blas_tois@alumnos.ilernasevilla.com';
+
+    let asunto = '¡Hola Rafa, me ha gustado tu portfolio!';
+    let mensajePorDefecto = 'Te voy a contratar en mi empresa con efecto imnediato, un saludo';
+
+    let mailtoLink = 'mailto:' + direccionCorreo + '?subject=' + encodeURIComponent(asunto) + '&body=' + encodeURIComponent(mensajePorDefecto);
+    window.open(mailtoLink, '_blank');
 }
 
 function colorearl(color){
